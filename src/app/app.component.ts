@@ -6,6 +6,7 @@ import { PortafolioComponent } from "./pages/portafolio/portafolio.component";
 import { ItemComponent } from "./pages/item/item.component";
 import { AboutComponent } from "./pages/about/about.component";
 import { InfoPaginaService } from './services/info-pagina.service';
+import { ProductosService } from './services/productos.service';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,7 @@ import { InfoPaginaService } from './services/info-pagina.service';
 export class AppComponent {
 
 
-  constructor(public infoPaginaService:InfoPaginaService){
+  constructor(public infoPaginaService:InfoPaginaService, public productosService:ProductosService){
     
   }
 }
